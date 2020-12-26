@@ -1,0 +1,266 @@
+
+*
+{
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+}
+
+body
+{
+    font-size: 18px;
+    background-color: hsl(235, 21%, 11%);
+    font-family: 'Josefin Sans';
+}
+
+h1
+{
+    color: #FFF;
+}
+
+.header
+{
+    background-image: url("../images/bg-desktop-dark.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#addNewItem
+{
+    border-radius: 0.25rem;
+    color:hsl(234, 39%, 85%);
+    background-color: hsl(235, 24%, 19%);
+    border: 0;
+}
+
+.item
+{
+    background-color:  hsl(235, 24%, 19%);
+    border-radius:0;
+    border: 0;
+    position: relative;
+    color:hsl(234, 39%, 85%);
+}
+
+
+.itemsContainer
+{
+    background-color:  hsl(235, 24%, 19%);
+    border: 0;
+    box-shadow:0 0 20px 0 hsl(235, 21%, 11%);
+    border-radius:0.25rem;
+}
+
+.fItem
+{
+    border-radius:.25rem 0.25rem 0 0 !important;
+}
+
+.item:after
+{
+    content:"";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height:1px;
+    top:100%;
+    left:0%;
+    background-color: hsl(233, 14%, 35%);
+}
+
+.checkbox
+{
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    position: relative;
+    border:0;
+    /* opacity:0; */
+}
+
+
+.checkbox::after
+{
+    content: "";
+    width:13px;
+    height:13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    border-radius: 50%;
+    background-image:linear-gradient(#c058f3,#57ddff);
+    opacity: 1;
+} 
+
+.checkbox:checked:before
+{
+    content: "";
+    width:13px;
+    height:13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    border-radius: 50%;
+    background-image:linear-gradient(#c058f3,#57ddff);
+    opacity: 1;
+}
+
+.forDesc
+{
+    background-color:  hsl(235, 24%, 19%);
+    border-radius:0 0 0.25rem 0.25rem;
+    color:hsl(237, 9%, 61%);
+    border: 0;
+}
+
+
+
+.forDesc p:hover , .forMob p:hover
+{
+    cursor: pointer;
+    color: hsl(236, 33%, 92%) ;
+}
+
+.completed
+{
+    text-decoration-line:line-through;
+    color:hsl(237, 9%, 61%);
+}
+
+.notCompleted
+{
+    text-decoration-line:none;
+}
+
+.clearItem
+{
+    display: none;
+    cursor: pointer;
+}
+
+.item:hover .clearItem
+{
+    display:block;
+}
+
+.header > div
+{
+    width: 40%;
+}
+
+.activeBright
+{
+    color:hsl(220, 98%, 61%);
+}
+
+#forTheme
+{
+    cursor: pointer;
+}
+
+
+.checkMark
+{
+
+    position: absolute;
+    top:5px;
+    left: 15px;
+    z-index: 1111;
+}
+
+
+@media screen and (max-width:1099px)
+{
+    .header > div
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:879px)
+{
+    .header > div
+    {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:740px)
+{
+    *
+    {
+        font-size: 16px;
+    }
+    .header > div
+    {
+        width: 70%;
+    }
+
+    .checkMark
+    {
+        position: absolute;
+        top:4px;
+        left:13px;
+        z-index: 1111;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    *
+    {
+        font-size: 15px;
+    }
+    .header
+    {
+        background-image: url("../images/bg-mobile-dark.jpg");
+
+    }
+    .header > div
+    {
+        width: 85%;
+    }
+
+    .checkMark
+    {
+        position: absolute;
+        top:2px;
+        left:12px;
+        z-index: 1111;
+    }
+}
+
+@media screen and (max-width:530px)
+{
+    .header
+    {
+        background-image: url("../images/bg-mobile-dark.jpg");
+        background-size: contain;
+
+    }
+}
+
+@media screen and (max-width:440px)
+{
+    *
+    {
+        font-size: 13px;
+    }
+    .header
+    {
+        background-image: url("../images/bg-mobile-dark.jpg");
+
+    }
+    .header > div
+    {
+        width: 90%;
+    }
+
+    .checkMark
+    {
+        position: absolute;
+        top:2px;
+        left:12px;
+        z-index: 1111;
+    }
+}

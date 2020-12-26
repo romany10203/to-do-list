@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link id="themeStyly" rel="stylesheet" href="css/cssLight.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Todo app</title>
+
+  </head>
+
+  <body>
+
+      <div class="header">
+
+        <div class="m-auto py-5">
+          
+          <div class="d-flex justify-content-between">
+
+            <div>
+              <h1>TO DO</h1>
+            </div>
+
+            <div>
+              <img id="forTheme" src="images/icon-moon.svg" alt="moon">
+            </div>
+
+          </div>
+
+          <div>
+            <input class="form-control" id="addNewItem" placeholder="Add new task">
+          </div>
+
+          <div class="itemsContainer mt-5">
+            
+            <div id="items">
+            </div>
+
+            
+            <div class="form-control d-flex justify-content-between forDesc ">
+              
+              
+              <div>
+                <span><span id="numOfItems"></span> Items left</span>
+              </div>
+              
+              <div class="row disabled">
+                <p onclick="addToPage();" id="showAll" class="mx-3 ">All</p>
+                <p onclick="addActiveToPage();" id="showActive" class="mx-3">Active</p>
+                <p onclick="addCompletedToPage();" id="showCompleted" class="mx-3">Completed</p>
+              </div>
+            
+
+              <div id="clearALL">
+                <p>Clear All</p>
+              </div>
+
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      
+
+
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/js.js"></script>
+  </body> 
+
+</html>
